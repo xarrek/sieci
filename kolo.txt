@@ -1,0 +1,31 @@
+﻿Zaliczenie Lamp
+
+Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumiałe dla wyszystkich. 
+
+1.  Nie ma co opisywać
+2.  Jak wyżej
+3.  Komenda: passwd
+4.  sudo -i
+5.  wget crafted.pl/f/kolo/profile
+    cp profile /etc/profile
+6.  CTRL + D
+    sudo -i
+    alias
+7.  apt-get update
+    apt-get dist-update
+8.  apt-get install mc less bzip2 unzip zip nano
+9.  ifconfig
+    ifconfig eth0:0 192.168.201.X+1 netmask 255.255.255.0
+    ifconfig eth0:1 192.168.201.X+2 netmask 255.255.255.0
+    ifconfig eth0:2 192.168.201.X+3 netmask 255.255.255.0
+    ifconfig
+10. route
+    route add -net 82.145.72.0 netmask 255.255.254.0 gw 192.168.201.2
+    route
+    wget crafted.pl/f/kolo/interfaces
+    cp interfaces /etc/network/interfaces
+    nano /etc/network/interfaces
+    #zmien XXX na odpowiedni adres
+    /etc/init.d/networking restart
+    ifconfig
+
