@@ -1,0 +1,13 @@
+$TTL 	1s
+@ 	IN 	SOA 	localhost. root.localhost. (
+		1 	; Serial
+		604800 	; Refresh
+		86400 	; Retry
+		2419200 ; Expire
+		604800 ) ; Negative Cache TTL
+;
+@ 	IN 	NS 	localhost.
+1 	IN 	PTR 	localhost.
+1 	IN 	PTR 	host1
+2 	IN 	PTR 	host2
+3 	IN 	PTR		host3
