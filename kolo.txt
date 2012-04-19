@@ -30,10 +30,22 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     ifconfig
 11. apt-get install apache2
 12. wget crafted.pl/f/kolo/host1
+    wget crafted.pl/f/kolo/host2
+    wget crafted.pl/f/kolo/host3
     cp host1 /etc/apache2/sites-available/host1
-    ln -s /etc/apache2/sites-available/host1 /etc/apache2/sites-enabled/host1
+    cp host2 /etc/apache2/sites-available/host2
+    cp host3 /etc/apache2/sites-available/host3
+    ln -s /etc/apache2/sites-available/host1 /etc/apache2/sites-enabled/010-host1
+    ln -s /etc/apache2/sites-available/host2 /etc/apache2/sites-enabled/010-host2
+    ln -s /etc/apache2/sites-available/host3 /etc/apache2/sites-enabled/010-host3
     mkdir /var/www/host1
+    mkdir /var/www/host2
+    mkdit /var/www/host3
     nano /var/www/host1/index.html
-    #cos wpisać :D HTML ^^
+    #cos wpisać :D HTML ^^ „serwer wirtualny host1 – adres 192.168.201.x+1”.
+    nano /var/www/host2/index.html
+    #cos wpisać :D HTML ^^ „serwer wirtualny host1 – adres 192.168.201.x+1”.
+    nano /var/www/host3/index.html
+    #cos wpisać :D HTML ^^ „serwer wirtualny host1 – adres 192.168.201.x+1”.
     apg #a jak nie zadziala to /etc/init.d/apache2 restart
     

@@ -1,5 +1,5 @@
 NameVirtualHost *
 <VirtualHost 192.168.201.XXX>
 	ServerAdmin webmaster@localhost
-	DocumentRoot /var/www/host1
+	DocumentRoot /var/www/host2
 </VirtualHost>
