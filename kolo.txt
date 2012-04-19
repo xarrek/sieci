@@ -28,4 +28,12 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     #zmien XXX na odpowiedni adres
     /etc/init.d/networking restart
     ifconfig
-
+11. apt-get install apache2
+12. wget crafted.pl/f/kolo/host1
+    cp host1 /etc/apache2/sites-available/host1
+    ln -s /etc/apache2/sites-available/host1 /etc/apache2/sites-enabled/host1
+    mkdir /var/www/host1
+    nano /var/www/host1/index.html
+    #cos wpisać :D HTML ^^
+    apg #a jak nie zadziala to /etc/init.d/apache2 restart
+    
