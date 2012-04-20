@@ -1,0 +1,5 @@
+<VirtualHost *>
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/hostn1/
+	ServerName hostn1.zX.lab.vs
+</VirtualHost>

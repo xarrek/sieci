@@ -66,3 +66,23 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     cp zz.lab.vs /etc/bind/zX.lab.vs   # w miejsce X numer grupy
     bre
     ping host1.zX.lab.vs 	# W miejsce X numer grupy
+15. wget crafted.pl/f/kolo/hostn1
+    nano hostn1 		# W miejsce X numer grupy
+    cp hostn1 /etc/apache2/sites-available/
+    ln -s /etc/apache2/sites-available/hostn1 /etc/apache2/sites-enabled/040-hostn1
+    wget crafted.pl/f/kolo/hostn2
+    nano hostn2			# W miejsce X numer grupy
+    cp hostn2 /etc/apache2/sites-available/
+    ln -s /etc/apache2/sites-available/hostn2 /etc/apache2/sites-enables/040-hostn2
+    apg lub /etc/init.d/apache2 restart
+16. apt-get update
+    apt-get install php5 mysql-server mysql-client php5-mysql
+	#hasło do mysql podczas instalacji
+17. mysql -p
+	#haslo do bazy
+    show databases;
+    create database joomladb;
+    show databases;
+    grant all on joomladb.* to root@localhost;
+    exit
+18. Później...
