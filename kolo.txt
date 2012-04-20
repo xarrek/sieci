@@ -1,8 +1,4 @@
-﻿Zaliczenie Lamp
-
-Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumiałe dla wyszystkich. 
-
-1.  Nie ma co opisywać
+﻿1.  Nie ma co opisywać
 2.  Jak wyżej
 3.  Komenda: passwd
 4.  sudo -i

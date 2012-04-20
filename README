@@ -1,7 +1,14 @@
-Wszystko co potrzebne by zaliczyc sieci!!!
-Je¿eli czegoœ nie kminicie to pisaæ.
-W weekend postaram jeszcze opisaæ caloœæ dok³adnie.
-~xarrek
+Zaliczenie LAMP
 
-PS. Pisane na szybko.
-Wieczorem bedzie aktualizacja
+Witam studentów ^^
+
+Poni¿ej s¹ wypisane komendy które nale¿y wpisaæ do konsoli. Wszystko najlepiej robic pod rootem. Komentarze s¹ po #. Jak bêdzie jakiœ problem ze zrozumieniem to pisaæ do mnie (ka¿dy chyba ma kontakt). Ostatni commit zrobiê  najpóŸniej 24h przed egzaminem aby ka¿dy mia³ mo¿liwoœæ przeczytania i sprawdzenia tego. Zmiany po tym czasie je¿eli nast¹pi¹ to poinformujê ale przed ostatnim commitem postaram siê aby wszystko by³o poprawnie.
+
+Wszystkie pliki znajd¹ siê w odpowiednim miejscu jak bêdzie dzia³a³ mój server który obecnie le¿y przez OVH. Dok³adna scie¿ka mo¿e siê jeszcze zmieniæ aby skróciæ wpisywanie. kolo.txt bêdzie te¿ tam dostêpne ale to napiszê jak ca³oœæ bêdzie ju¿ prawie skonczona. 
+
+W folderze org znajduj¹ siê standardowe pliki które w zadaniu trzeba modyfikowaæ. Taki backup jakby ktoœ Ÿle zmodyfikowa³ ale o tym napiszê w kolo.txt. 
+
+Na temat adresów IP oraz domen nie bêdê siê rozpisywa³ bo to chyba zrozumia³e dla wyszystkich. 
+
+Trzymajcie siê i ¿yczê zaliczenia
+~xarrek
