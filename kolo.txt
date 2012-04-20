@@ -25,7 +25,7 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     wget crafted.pl/f/kolo/interfaces
     cp interfaces /etc/network/interfaces
     nano /etc/network/interfaces
-    	#zmien XXX na odpowiedni adres
+				#zmien XXX na odpowiedni adres
     /etc/init.d/networking restart
     ifconfig
 11. apt-get install apache2
@@ -42,25 +42,25 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     mkdir /var/www/host2
     mkdit /var/www/host3
     nano /var/www/host1/index.html
-    	#cos wpisać :D HTML ^^ „serwer wirtualny host1 – adres 192.168.201.x+1”.
+				#cos wpisać :D HTML ^^ „serwer wirtualny host1 – adres 192.168.201.x+1”.
     nano /var/www/host2/index.html
-    	#cos wpisać :D HTML ^^ „serwer wirtualny host2 – adres 192.168.201.x+2”.
+				#cos wpisać :D HTML ^^ „serwer wirtualny host2 – adres 192.168.201.x+2”.
     nano /var/www/host3/index.html
-    	#cos wpisać :D HTML ^^ „serwer wirtualny host3 – adres 192.168.201.x+3”.
-    apg #a jak nie zadziala to /etc/init.d/apache2 restart
+				#cos wpisać :D HTML ^^ „serwer wirtualny host3 – adres 192.168.201.x+3”.
+    apg 			#a jak nie zadziala to /etc/init.d/apache2 restart
 13. apt-get install bind9
 14. wget crafted.pl/f/kolo/named.conf
     nano named.conf
-    	#W miejsce X wstawiamy numer grupy
+				#W miejsce X wstawiamy numer grupy
     cp named.conf /etc/bind/
     wget crafted.pl/f/kolo/200.168.192.in-addr.arpa
     wget crafted.pl/f/kolo/201.168.192.in-addr.arpa
     wget crafted.pl/f/kolo/zz.lab.vs
     nano 200.168.192.in-addr.arpa
-    	#WSTAWIENIE w miejscie ZZZ IP grupy
+				#WSTAWIENIE w miejscie ZZZ IP grupy
     nano zz.lab.vs
-    	#WSTAWIENIE w miejscie X numer grupy, w miejsce YYY wstawić x+1 itd
-    	#w miejsce ZZZ wstawic IP grupy
+				#WSTAWIENIE w miejscie X numer grupy, w miejsce YYY wstawić x+1 itd
+				#w miejsce ZZZ wstawic IP grupy
     cp 200.168.192.in-addr.arpa /etc/bind/
     cp 201.168.192.in-addr.arpa /etc/bind/
     cp zz.lab.vs /etc/bind/zX.lab.vs   # w miejsce X numer grupy
@@ -79,10 +79,11 @@ Na temat adresów IP oraz domen nie będę się rozpisywał bo to chyba zrozumia
     apt-get install php5 mysql-server mysql-client php5-mysql
 	#hasło do mysql podczas instalacji
 17. mysql -p
-	#haslo do bazy
+				#haslo do bazy
     show databases;
     create database joomladb;
     show databases;
     grant all on joomladb.* to root@localhost;
     exit
 18. Później...
+    
