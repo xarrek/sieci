@@ -5,8 +5,8 @@
 2.  Jak wyżej
 3.  Komenda: passwd
 4.  sudo -i
-5.  wget crafted.pl/f/kolo/profile
-    cp profile /etc/profile
+5.  wget sieci.tk/profile
+    cp profile /etc/
 6.  CTRL + D
     sudo -i
     alias
@@ -21,16 +21,16 @@
 10. route
     route add -net 82.145.72.0 netmask 255.255.254.0 gw 192.168.201.2
     route
-    wget crafted.pl/f/kolo/interfaces
-    cp interfaces /etc/network/interfaces
+    wget sieci.tk/interfaces
+    cp interfaces /etc/network/
     nano /etc/network/interfaces
 				#zmien XXX na odpowiedni adres
     /etc/init.d/networking restart
     ifconfig
 11. apt-get install apache2
-12. wget crafted.pl/f/kolo/host1
-    wget crafted.pl/f/kolo/host2
-    wget crafted.pl/f/kolo/host3
+12. wget sieci.tk/host1
+    wget sieci.tk/host2
+    wget sieci.tk/host3
     cp host1 /etc/apache2/sites-available/host1
     cp host2 /etc/apache2/sites-available/host2
     cp host3 /etc/apache2/sites-available/host3
@@ -48,13 +48,13 @@
 				#cos wpisać :D HTML ^^ „serwer wirtualny host3 – adres 192.168.201.x+3”.
     apg 			#a jak nie zadziala to /etc/init.d/apache2 restart
 13. apt-get install bind9
-14. wget crafted.pl/f/kolo/named.conf
+14. wget sieci.tk/named.conf
     nano named.conf
 				#W miejsce X wstawiamy numer grupy
     cp named.conf /etc/bind/
-    wget crafted.pl/f/kolo/200.168.192.in-addr.arpa
-    wget crafted.pl/f/kolo/201.168.192.in-addr.arpa
-    wget crafted.pl/f/kolo/zz.lab.vs
+    wget sieci.tk/200.168.192.in-addr.arpa
+    wget sieci.tk/201.168.192.in-addr.arpa
+    wget sieci.tk/zz.lab.vs
     nano 200.168.192.in-addr.arpa
 				#WSTAWIENIE w miejscie ZZZ IP grupy
     nano zz.lab.vs
@@ -65,11 +65,11 @@
     cp zz.lab.vs /etc/bind/zX.lab.vs   # w miejsce X numer grupy
     bre
     ping host1.zX.lab.vs 	# W miejsce X numer grupy
-15. wget crafted.pl/f/kolo/hostn1
+15. wget sieci.tk/hostn1
     nano hostn1 		# W miejsce X numer grupy
     cp hostn1 /etc/apache2/sites-available/
     ln -s /etc/apache2/sites-available/hostn1 /etc/apache2/sites-enabled/040-hostn1
-    wget crafted.pl/f/kolo/hostn2
+    wget sieci.tk/hostn2
     nano hostn2			# W miejsce X numer grupy
     cp hostn2 /etc/apache2/sites-available/
     ln -s /etc/apache2/sites-available/hostn2 /etc/apache2/sites-enables/040-hostn2
