@@ -2,6 +2,7 @@
 
 Q: da sie jakos logi roota usunac? 
 
-A: Oczywiście. Wystarczy że komendą "rm .bash_history" lub za pomocą mc usuwamy ten plik. Po czym należy się wylogować z roota (CTRL + D) i zalogować ponownie (sudo -i).
+A: Oczywiście. Wystarczy że komendą "rm .bash_history" lub za pomocą mc usuwamy ten plik. 
+Po czym należy się wylogować z roota (CTRL + D) i zalogować ponownie (sudo -i).
 
 Wszystkie pytania jakie macie odpowiedzi będę zamieszczał tutaj aby pytania się nie powtarzały.
