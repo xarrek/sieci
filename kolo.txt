@@ -1,5 +1,7 @@
-﻿1.  Nie ma co opisywać ale najwazniejsze aby w putty ustawić kodowanie na utf-8 co nie bedzie powodowac problemów z wyświetlaniem lub kopiowanie do konsoli
-    Aby zmienic kodowanie po uruchomieniu putty w kategori "Window" szukamy "Translation" i zmieniamy "Remote character set:" na UTF-8. Potem wracamy do "Session" wpisujemy IP i otwieramy polaczenie.
+﻿﻿1.  Nie ma co opisywać ale najwazniejsze aby w putty ustawić kodowanie na utf-8 co nie bedzie powodowac problemów z
+    wyświetlaniem lub kopiowanie do konsoli
+    Aby zmienic kodowanie po uruchomieniu putty w kategori "Window" szukamy "Translation" i zmieniamy 
+    "Remote character set:" na UTF-8. Potem wracamy do "Session" wpisujemy IP i otwieramy polaczenie.
 2.  Jak wyżej
 3.  Komenda: passwd
 4.  sudo -i
@@ -88,7 +90,8 @@
     #Teraz przechodzimy do przeglądarki i tam instalujemy joomle
     #adres jest hostn1.zXX.lab.vs w miejsce XX wstawiamy numer grupy
     #Wybieramy jezyk polski i dalej
-    #Jeżeli wykonaliscie wszystkie poprzednie zadania dobrze to w nastepnym oknie bedzie tylko ostatnia wartosc "configuration.php zapisywalny?" na NIE (czerwono) i klikamy dalej
+    #Jeżeli wykonaliscie wszystkie poprzednie zadania dobrze to w nastepnym oknie bedzie tylko ostatnia wartosc 
+    #"configuration.php zapisywalny?" na NIE (czerwono) i klikamy dalej
     #akceptujemy licencje klikajac dalej
     #Teraz najważniejsza rzecz czyli konfigurowanie mysqla
     #typ bazy na MYSQL
