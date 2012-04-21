@@ -115,4 +115,4 @@
     rm -r /var/www/hostn1/installation/
     #teraz wystarczy kliknac na stonie na przycisk witryna lub wpisac jeszcez raz adres hostn1.zXX.lab.vs
     #naszym oczom powinna pojawić sie strona glowna joomli
-    #Koniec
+    #Koniec ^^
