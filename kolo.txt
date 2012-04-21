@@ -1,4 +1,5 @@
-﻿1.  Nie ma co opisywać
+﻿1.  Nie ma co opisywać ale najwazniejsze aby w putty ustawić kodowanie na utf-8 co nie bedzie powodowac problemów z wyświetlaniem lub kopiowanie do konsoli
+    Aby zmienic kodowanie po uruchomieniu putty w kategori "Window" szukamy "Translation" i zmieniamy "Remote character set:" na UTF-8. Potem wracamy do "Session" wpisujemy IP i otwieramy polaczenie.
 2.  Jak wyżej
 3.  Komenda: passwd
 4.  sudo -i
@@ -81,5 +82,34 @@
     show databases;
     grant all on joomladb.* to root@localhost;
     exit
-18. Później...
-    
+18. wget http://joomlacode.org/gf/download/frsrelease/16914/73508/Joomla_2.5.4-Stable-Full_Package.zip
+    unzip Joomla_2.5.4-Stable-Full_Package.zip -d joomla
+    cp -R joomla/* /var/www/hostn1/
+    #Teraz przechodzimy do przeglądarki i tam instalujemy joomle
+    #adres jest hostn1.zXX.lab.vs w miejsce XX wstawiamy numer grupy
+    #Wybieramy jezyk polski i dalej
+    #Jeżeli wykonaliscie wszystkie poprzednie zadania dobrze to w nastepnym oknie bedzie tylko ostatnia wartosc "configuration.php zapisywalny?" na NIE (czerwono) i klikamy dalej
+    #akceptujemy licencje klikajac dalej
+    #Teraz najważniejsza rzecz czyli konfigurowanie mysqla
+    #typ bazy na MYSQL
+    #nazwa serwera bez zmian czyli localhost
+    #uzyszkodnik wpisujemy root
+    #haslo takie jakie dalismy podczas instalacji bazy danych
+    #nazwa bazy danych wpisujemy joomladb
+    #reszty nie zmieniamy i klikamy dalej
+    #Konfiguracje FTP omijamy i klikamy dalej
+    #Nazwa witryny dowolna ^^
+    #mail moze byc falszywy np. test@test.com
+    #nazwa admina moze zostac standardowa
+    #haslo dowolne ^^
+    #Teraz dwie najważniejsze rzeczy aby joomla pokazała stonę główną
+    #kopiujemy zawartosc pola tekstowego
+    #w konsoli wpisujemy:
+    nano /var/www/hostn1/configuration.php
+    #prawy przyciskiem myszy wklejamy to co skopiowalismy i zapisujemy plik
+    #teraz trzeba zrobic jeszcze jedna rzecz
+    #należy wyrzucic katalog installation wykonujemy to komenda:
+    rm -r /var/www/hostn1/installation/
+    #teraz wystarczy kliknac na stonie na przycisk witryna lub wpisac jeszcez raz adres hostn1.zXX.lab.vs
+    #naszym oczom powinna pojawić sie strona glowna joomli
+    #Koniec
