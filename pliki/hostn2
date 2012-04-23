@@ -1,6 +1,6 @@
 <VirtualHost *>
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/ww/hostn2/
+        DocumentRoot /var/www/hostn2/
         ServerName hostn2.zX.lab.vs
 </VirtualHost>
 
