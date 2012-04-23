@@ -89,6 +89,7 @@
 18. wget http://joomlacode.org/gf/download/frsrelease/16914/73508/Joomla_2.5.4-Stable-Full_Package.zip
     unzip Joomla_2.5.4-Stable-Full_Package.zip -d joomla
     cp -R joomla/* /var/www/hostn1/
+    apg lub /etc/init.d/restart
     #Teraz przechodzimy do przeglądarki i tam instalujemy joomle
     #adres jest hostn1.zXX.lab.vs w miejsce XX wstawiamy numer grupy
     #Wybieramy jezyk polski i dalej
