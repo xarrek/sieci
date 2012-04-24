@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 IP=$1
 GRUPA=$2
 IP1=$((GRUPA*3+1))
@@ -16,7 +16,7 @@ then
 	echo -e $ZIELONY"Ustawianie aliasów"$RESET
 	echo 'alias l="ls --color"' >> /etc/profile
 	echo 'alias ll="ls -l --color"' >> /etc/profile
-	echo 'alias la=ls -al --color"' >> /etc/profile
+	echo 'alias la="ls -al --color"' >> /etc/profile
 	echo 'alias apg="apache2ctl graceful"' >> /etc/profile
 	echo 'alias bsp="/etc/init.d/bind9 stop"' >> /etc/profile
 	echo 'alias bst="/etc/init.d/bind9 start"' >> /etc/profile
@@ -79,7 +79,7 @@ then
 	echo "};" >> /etc/bind/named.conf
 	echo "zone "z$GRUPA.lab.vs"{" >> /etc/bind/named.conf
 	echo -e "\ttype master;" >> /etc/bind/named.conf
-	echo -e "\tfile "/etc/bind/z$GRUPA.lab.vs";" >> /etc/bind/named.conf
+	echo -e "\tfile "\"/etc/bind/z$GRUPA.lab.vs"\";" >> /etc/bind/named.conf
 	echo "};" >> /etc/bind/named.conf
 	echo 'include "/etc/bind/named.conf.local";' >> /etc/bind/named.conf
 	echo 'include "/etc/bind/named.conf.default-zones";' >> /etc/bind/named.conf
