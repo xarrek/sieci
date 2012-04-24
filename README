@@ -2,20 +2,12 @@ Zaliczenie LAMP
 
 Witam studentów ^^
 
-Poni¿ej s¹ wypisane komendy które nale¿y wpisaæ do konsoli. Wszystko najlepiej robic pod rootem. Komentarze s¹ po #. Jak bêdzie jakiœ problem ze zrozumieniem to pisaæ do mnie (ka¿dy chyba ma kontakt). Ostatni commit zrobiê  najpóŸniej 24h przed egzaminem aby ka¿dy mia³ mo¿liwoœæ przeczytania i sprawdzenia tego. Zmiany po tym czasie je¿eli nast¹pi¹ to poinformujê ale przed ostatnim commitem postaram siê aby wszystko by³o poprawnie.
-
-W folderze org znajduj¹ siê standardowe pliki które w zadaniu trzeba modyfikowaæ. Taki backup jakby ktoœ Ÿle zmodyfikowa³ ale o tym napiszê w kolo.txt. 
-
-Na temat adresów IP oraz domen nie bêdê siê rozpisywa³ bo to chyba zrozumia³e dla wyszystkich. 
-
-UPDATE:
-W dniu dzisiejszym postaram siê zrobiæ jeszcze filmik jak w inny sposób zrobiæ te zadania. 
-
-Chyba wszystko dok³adnie jest opisane w kolo.txt który ma status RC ^^
-
-UPDATE2:
-Pliki le¿¹ ju¿ na odpowiednim miejscu wiec mo¿na robiæ ju¿ wed³ug tutka.
-
+Szybko i na temat.
+pliki - zawiera zmodyfikowane pliki do zaliczenia
+org - oryginalne wersje
+kolo.txt - zawiera prawie wszystkie komendy na temat co sie dzieje
+skrypt.sh - cudo nad którym nie napracowa³em siê, wykonuje prawie wszystko ^^
+tutek.txt - zawiera informacje jak korzystac z skrypt.sh 
 
 Trzymajcie siê i ¿yczê zaliczenia
 ~boni
