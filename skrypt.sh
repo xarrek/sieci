@@ -31,6 +31,22 @@ then
 	ifconfig eth0:0 192.168.201.$IP1 netmask 255.255.255.0
 	ifconfig eth0:1 192.168.201.$IP2 netmask 255.255.255.0
 	ifconfig eth0:2 192.168.201.$IP3 netmask 255.255.255.0
+	echo -e >> /etc/network/interfaces
+	echo -e "auto eth0:0" >> /etc/network/interfaces
+	echo -e "iface eth0:0 inet static" >> /etc/network/interfaces
+	echo -e "\taddress 192.168.201.$IP1" >> /etc/network/interfaces
+	echo -e "\tnetwork 255.255.255.0" >> /etc/network/interfaces
+	echo -e "\tup route add -net 82.145.72.0 netmask 255.255.254.0 gw 192.168.201.2" >> /etc/network/interfaces
+	echo -e >> /etc/network/interfaces
+	echo -e "auto eth0:1" >> /etc/network/interfaces
+	echo -e "iface eth0:1 inet static" >> /etc/network/interfaces
+	echo -e "\taddress 192.168.201.$IP2" >> /etc/network/interfaces
+	echo -e "\tnetmask 255.255.255.0" >> /etc/network/interfaces
+	echo -e >> /etc/network/interfaces
+	echo -e "auto eth0:2" >> /etc/network/interfaces
+	echo -e "iface eth0:2 inet static" >> /etc/network/interfaces
+	echo -e "\taddress 192.168.201.$IP3" >> /etc/network/interfaces
+	echo -e "\tnetmask 255.255.255.0" >> /etc/network/interfaces
 	echo -e $ZIELONY"Ustawianie trasy routingu"$RESET
 	route add -net 82.145.72.0 netmask 255.255.254.0 gw 192.168.201.2
 	echo -e $ZIELONY"Instalacja Apache2"$RESET
