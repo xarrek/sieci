@@ -30,7 +30,7 @@ else
 		echo -e "auto eth0:0" >> /etc/network/interfaces
 		echo -e "iface eth0:0 inet static" >> /etc/network/interfaces
 		echo -e "\taddress 192.168.201.$IP1" >> /etc/network/interfaces
-		echo -e "\tnetwork 255.255.255.0" >> /etc/network/interfaces
+		echo -e "\tnetmask 255.255.255.0" >> /etc/network/interfaces
 		echo -e "\tup route add -net 82.145.72.0 netmask 255.255.254.0 gw 192.168.201.2" >> /etc/network/interfaces
 		echo -e >> /etc/network/interfaces
 		echo -e "auto eth0:1" >> /etc/network/interfaces
