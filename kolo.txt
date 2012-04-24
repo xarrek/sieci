@@ -73,7 +73,7 @@
     wget sieci.tk/hostn2
     nano hostn2			# W miejsce X numer grupy
     cp hostn2 /etc/apache2/sites-available/
-    ln -s /etc/apache2/sites-available/hostn2 /etc/apache2/sites-enables/040-hostn2
+    ln -s /etc/apache2/sites-available/hostn2 /etc/apache2/sites-enabled/040-hostn2
     mkdir /var/www/hostn2
     apg lub /etc/init.d/apache2 restart
 16. apt-get update
