@@ -1,0 +1,19 @@
+﻿Tutek
+
+1. Włączamy putty.exe
+2. Przechodzimy do zakładki "Translation"
+3. Zmieniamy "Remote character sets" na  "UTF-8"
+4. Przechodzimy do zakładki "Session"
+5. W hostname wpisujemy adres IP "192.168.200.XXX" w miejsce XXX wstawiamy numerki które poda egzaminator
+6. Klikamy "Open"
+7. Logujemy się na użyszkodnika "user" z hasłem "user"
+8. Następnie ściągamy skrypt: wget sieci.tk/skrypt.sh
+9. Należy teraz dać uprawnienia do uruchamiania: chmod +x skrypt.sh
+10. Włączamy skrypt: sudo ./skrypt.sh IP GRUPA
+	Przykład:
+	sudo ./skrypt.sh 132 15
+11. Podajemy hasło.
+12. Teraz paczymy się w konsolę i podziwiamy ciągi znaków.
+13. W miedzy czasie instalator poprosi o nadanie hasła dla mysql.
+14. Następnie poprosi o podanie jeszcze raz aby utworzyć odpowiednią bazę.
+15. Po wykonaniu się skryptu 
