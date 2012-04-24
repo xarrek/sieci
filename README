@@ -9,5 +9,8 @@ kolo.txt - zawiera prawie wszystkie komendy na temat co sie dzieje
 skrypt.sh - cudo nad którym nie napracowa³em siê, wykonuje prawie wszystko ^^
 tutek.txt - zawiera informacje jak korzystac z skrypt.sh 
 
+Wszystkie AKTUALNE pliki le¿¹ na serwerze: sieci.tk
+Wiec aby pobraæ nale¿y w konsoli wpisaæ: wget sieci.tk/skrypt.sh lub sieci.tk/named.conf
+
 Trzymajcie siê i ¿yczê zaliczenia
 ~boni
