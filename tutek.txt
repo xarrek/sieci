@@ -7,6 +7,7 @@
 5. W hostname wpisujemy adres IP "192.168.200.XXX" w miejsce XXX wstawiamy numerki które poda egzaminator
 6. Klikamy "Open"
 7. Logujemy się na użyszkodnika "user" z hasłem "user"
+	Zmieniamy hasło dla użyszkodnika komenda: passwd
 8. Następnie ściągamy skrypt: wget sieci.tk/skrypt.sh
 9. Należy teraz dać uprawnienia do uruchamiania: chmod +x skrypt.sh
 10. Włączamy skrypt: sudo ./skrypt.sh IP GRUPA
