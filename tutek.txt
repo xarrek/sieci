@@ -16,4 +16,30 @@
 12. Teraz paczymy się w konsolę i podziwiamy ciągi znaków.
 13. W miedzy czasie instalator poprosi o nadanie hasła dla mysql.
 14. Następnie poprosi o podanie jeszcze raz aby utworzyć odpowiednią bazę.
-15. Po wykonaniu się skryptu 
+15. Po wykonaniu się skryptu wszystko jest gotowe.
+16. Przechodzimy do przeglądarki i idziemy na strone hostn1.zXX.lab.vs w miejsce XX wpisujemy grupe.
+17. Wybieramy język Polski i klikamy dalej
+18. Sprawdzamy czy w potrzebnych rzeczach będzie tylko jedna opcja na czerwono "configuration.php zapisywalny?"
+19. Klikamy dalej.
+20. Akceptujemy licencje.
+21. Teraz najważniejsza rzecz czyli konfiguracja mysql dla joomly
+22. Tyb bazy na MYSQL
+23. Nazwa serwera bez zmian czyli localhost
+24. Użyszkodnik wpisujemy root
+25. Hasło wpisujemy takie jakie dalismy podczas instalacji bazy danych
+26. Nazwa bazy danych to joomladb
+27. Reszty nie ruszamy i klikamy dalej.
+28. Konfiguracje FTP omijamy i dalej.
+29. Nazwa witryny dowolna ^^
+30. Mail może być fałszywy np. text@test.com
+31. Nazwa admina może zostać standardowa czyli admin
+32. Hasło dowolne i klikamy dalej
+33. Teraz bardzo ważne dwie rzeczy aby wszystko działało dobrze
+34. Kopiujemy zawartość pola tekstowego
+35. W konsoli wpisujemy: nano /var/www/hostn1/configuration.php
+35. Prawym przyciskiem myszy wklejamy to co skopiowaliśmy i zapisujemy plik
+36. Teraz jeszcze trzeba usunąć katalog installation komenda: rm -r /var/www/hostn1/installation/
+37. Wszystko jest już zrobione wpisujemy do przegladarki: hostn1.zXX.lab.vs gdzie XX to numer grupy
+38. Powinna pojawić się strona główna joomli.
+39. Teraz czekam na wódeczki ^^
+40. Koniec :D
