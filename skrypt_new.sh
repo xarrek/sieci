@@ -8,7 +8,7 @@ IP3=$((GRUPA*3+3))
 
 if [ "$#" -eq 2 ]
 then
-	if [ -e lock_profile ]
+	if [ ! -e lock_profile ]
 	then
 		echo 'alias l="ls --color"' >> /etc/profile
 		echo 'alias ll="ls -l --color"' >> /etc/profile
@@ -26,7 +26,7 @@ then
 	ifconfig eth0:0 192.168.201.$IP1 netmask 255.255.255.0
 	ifconfig eth0:1 192.168.201.$IP2 netmask 255.255.255.0
 	ifconfig eth0:2 192.168.201.$IP3 netmask 255.255.255.0
-	if [ -e lock_interfaces ]
+	if [ ! -e lock_interfaces ]
 	then
 		echo -e >> /etc/network/interfaces
 		echo -e "auto eth0:0" >> /etc/network/interfaces
